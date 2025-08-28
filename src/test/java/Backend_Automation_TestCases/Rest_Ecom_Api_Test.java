@@ -128,6 +128,7 @@ public class Rest_Ecom_Api_Test
 		String expectedMsg = js.get("message");
 		String actualMsg = "Product Deleted Successfully";
 		System.out.println(expectedMsg);
+		System.out.println(actualMsg);
 		Assert.assertEquals(actualMsg, expectedMsg);
 	}
 }
