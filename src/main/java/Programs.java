@@ -1,4 +1,4 @@
-package Java_Introduction;
+
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -419,23 +419,40 @@ public class Programs
 		System.out.println(str);
 	}
 
+	
+	
 	@Test(priority = 16)
 
 	public void palindromeNumber()
 
 	{
-		int num = 16461;
-		int rev = 0;
+		
 
-		while (num != 0)
+		int num = 454;
+		int rev = 0;
+		int temp = num;
+	
+
+		while (num > 0)
 
 		{
-			rev = rev * 10 + num % 10;
+			
+			rev = rev * 10 + num%10;
 			num = num / 10;
 		}
-
-		System.out.println(rev);
-
+		
+		if(temp==rev)
+			
+		{
+			System.out.println("Number is Palindrome");
+		}
+		
+		
+		else
+			
+		{
+			System.out.println("Number is not palindrome");
+		}
 	}
 	
 	
