@@ -45,7 +45,7 @@ import com.assertthat.selenium_shutterbug.core.Shutterbug;
  * @author aswin.l
  *
  */
-public class CommonActions 
+public class CommonActions
 
 {
 
@@ -64,7 +64,7 @@ public class CommonActions
 
 	{
 		try (FileInputStream fs = new FileInputStream(
-				"F:\\Sharan_Automation\\SeleniumFrameworkDesign\\resources\\GlobalData.properties"))
+				System.getProperty("user.dir") + "\\src\\main\\resources\\GlobalData.properties"))
 
 		{
 			properties.load(fs);
@@ -516,8 +516,6 @@ public class CommonActions
 		return Color.fromString(findElement(byElement).getCssValue(property)).asHex();
 	}
 
-	
-
 	public String getScreenShot(String imageName, String timeInFormat, String takeScreenshot, String reportName)
 
 	{
@@ -547,9 +545,6 @@ public class CommonActions
 		}
 		return screenshot;
 	}
-
-	
-
 
 	public void navigateBack()
 
@@ -679,7 +674,6 @@ public class CommonActions
 		waitForSpinner();
 	}
 
-	
 	public List<Integer> generatePastEpochTime()
 
 	{
@@ -819,11 +813,6 @@ public class CommonActions
 		WebDriverFactory.getInstance().getDriver().close();
 	}
 
-	
-	
-
-	
-
 	public String getStackTrace(Exception e)
 
 	{
@@ -902,7 +891,6 @@ public class CommonActions
 		ele.sendKeys(inputText);
 	}
 
-	
 	public void dragAndDropUsingJs(WebElement from, WebElement to)
 
 	{
@@ -955,7 +943,6 @@ public class CommonActions
 		WebDriverFactory.getInstance().getDriver().switchTo().alert().accept();
 	}
 
-	
 	public void navigetToBrowseProd()
 
 	{

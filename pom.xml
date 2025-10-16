@@ -19,18 +19,6 @@
 	</properties>
 
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.junit</groupId>
-				<artifactId>junit-bom</artifactId>
-				<version>5.11.0</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-
 	<dependencies>
 
 		<dependency>
@@ -70,26 +58,12 @@
 		</dependency>
 
 
-
-
-
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20210307</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>4.1.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>4.1.0</version>
-		</dependency>
 
 		<dependency>
 			<groupId>com.assertthat</groupId>
@@ -103,20 +77,14 @@
 			</exclusions>
 		</dependency>
 
-		
+
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>5.5.5</version>
 		</dependency>
 
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>2.6</version>
-		</dependency>
 
-		
 		<dependency>
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest</artifactId>
@@ -129,7 +97,7 @@
 			<version>2.16.1</version>
 		</dependency>
 
-	
+
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
@@ -155,18 +123,39 @@
 		</dependency>
 
 		<dependency>
-    <groupId>io.cucumber</groupId>
-    <artifactId>cucumber-picocontainer</artifactId>
-    <version>7.2.3</version>
-</dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-picocontainer</artifactId>
+			<version>7.2.3</version>
+		</dependency>
 
-<dependency>
-    <groupId>tech.grasshopper</groupId>
-    <artifactId>extentreports-cucumber7-adapter</artifactId>
-    <version>1.14.0</version>
-</dependency>
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber7-adapter</artifactId>
+			<version>1.14.0</version>
+		</dependency>
 
 
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.4.1</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.4.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.20.0</version>
+		</dependency>
 	</dependencies>
 
 

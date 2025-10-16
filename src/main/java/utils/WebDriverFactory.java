@@ -52,7 +52,7 @@ public class WebDriverFactory
 
 				// Set the path to ChromeDriver (replace with your actual path)
 				// System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+
-				// "\\src\\test\\resources\\chromedriver.exe");
+				// "\\src\\main\\resources\\chromedriver.exe");
 
 				ChromeOptions chromeOptions = new ChromeOptions();
 				chromeOptions.setCapability(CapabilityType.UNHANDLED_PROMPT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);

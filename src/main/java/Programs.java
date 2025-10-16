@@ -1,5 +1,4 @@
 
-
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -24,11 +23,11 @@ public class Programs
 
 		}
 
-		System.out.println(factorial);
+		System.out.println("Factorial of " + n + " is: " + factorial);
 
 	}
 
-	@Test(priority = 2,enabled = false)
+	@Test(priority = 2, enabled = false)
 
 	public void compressedString()
 
@@ -91,22 +90,23 @@ public class Programs
 			if (str.charAt(i) == str.charAt(i - 1))
 
 			{
-				
+
 				count++;// increments the count when the character matches the one before it
 			}
 
 			else
 
 			{
-				
-				result = result + str.charAt(i - 1) + count;// append the previous character and its count to result ,then reset the count
+
+				result = result + str.charAt(i - 1) + count;// append the previous character and its count to result
+															// ,then reset the count
 				count = 1;
 			}
 
 		}
-		
 
-		result = result + str.charAt(str.length() - 1) + count;// This line is appending the last character of the string
+		result = result + str.charAt(str.length() - 1) + count;// This line is appending the last character of the
+																// string
 
 		System.out.println(result);
 
@@ -122,9 +122,9 @@ public class Programs
 		for (int i = 1; i <= n; i++)
 
 		{
-			System.out.print(n1 + "  ");
+			System.out.print(n1 + "  ");// prints the current value of n1
 			int n3 = n1 + n2;
-			n1 = n2;
+			n1 = n2;// Updates the n1 and n2
 			n2 = n3;
 
 		}
@@ -242,10 +242,11 @@ public class Programs
 
 		int max = a[0][0];
 
-		for (int i = 0; i < 3; i++)
+		for (int i = 0; i < a.length; i++)
 
 		{
-			for (int j = 0; j < 3; j++)
+			for (int j = 0; j < a[i].length; j++)
+			// All columns in each row are covered.
 
 			{
 				if (a[i][j] > max)
@@ -419,43 +420,35 @@ public class Programs
 		System.out.println(str);
 	}
 
-	
-	
 	@Test(priority = 16)
 
 	public void palindromeNumber()
 
 	{
-		
 
 		int num = 454;
 		int rev = 0;
 		int temp = num;
-	
 
 		while (num > 0)
 
 		{
-			
-			rev = rev * 10 + num%10;
+
+			rev = rev * 10 + num % 10;
 			num = num / 10;
 		}
-		
-		if(temp==rev)
-			
+
+		if (temp == rev)
+
 		{
 			System.out.println("Number is Palindrome");
 		}
-		
-		
+
 		else
-			
+
 		{
 			System.out.println("Number is not palindrome");
 		}
 	}
-	
-	
-	
 
 }

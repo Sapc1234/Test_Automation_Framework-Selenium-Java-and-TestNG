@@ -20,6 +20,7 @@ public class Reports {
 	String category;
 	String authors = "Automation Tester";
 	String reportLocation;
+	
 	SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyy_hh_mm_ss.SSS");
 	String timeInFormat = formater.format(Calendar.getInstance().getTime());
 	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();

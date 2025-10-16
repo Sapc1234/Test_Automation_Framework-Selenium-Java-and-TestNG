@@ -50,7 +50,8 @@ public class Rest_Ecom_Api_Test
 		RequestSpecification reqAddProduct = given().spec(addProdReq).param("productName", "Google pixel  Mobile")
 				.param("productAddedBy", userId).param("productCategory", "Learning")
 				.param("productSubCategory", "Gadgets").param("productPrice", "15200").param("productDescription", "hp")
-				.param("productFor", "Both Men and Women").multiPart("productImage", new File("F:\\Mobile Image.jpg"));
+				.param("productFor", "Both Men and Women").multiPart("productImage",
+						new File(System.getProperty("user.dir") + "\\src\\test\\resources\\Mobile Image.jpg"));
 
 		String addProductResponse = reqAddProduct.when().post("/api/ecom/product/add-product").then().log().all()
 				.extract().response().asString();
