@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-16T13:21:46 IST" name="Default suite" finished-at="2025-10-16T13:21:59 IST" duration-ms="13712">
+  <suite started-at="2025-10-25T09:32:06 IST" name="Default suite" finished-at="2025-10-25T09:32:09 IST" duration-ms="3165">
     <groups>
     </groups>
-    <test started-at="2025-10-16T13:21:46 IST" name="Default test" finished-at="2025-10-16T13:21:59 IST" duration-ms="13712">
-      <class name="Backend_Automation_TestCases.Rest_Ecom_Api_Test">
-        <test-method signature="ecomerceApiAutomation()[pri:0, instance:Backend_Automation_TestCases.Rest_Ecom_Api_Test@6c40365c]" started-at="2025-10-16T13:21:46 IST" name="ecomerceApiAutomation" finished-at="2025-10-16T13:21:59 IST" duration-ms="13548" status="PASS">
+    <test started-at="2025-10-25T09:32:06 IST" name="Default test" finished-at="2025-10-25T09:32:09 IST" duration-ms="3165">
+      <class name="RestAssuredPractice.DesrilaizeTestTest">
+        <test-method signature="oTest()[pri:0, instance:RestAssuredPractice.DesrilaizeTestTest@38afe297]" started-at="2025-10-25T09:32:06 IST" name="oTest" finished-at="2025-10-25T09:32:09 IST" duration-ms="3113" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ecomerceApiAutomation -->
-      </class> <!-- Backend_Automation_TestCases.Rest_Ecom_Api_Test -->
+        </test-method> <!-- oTest -->
+      </class> <!-- RestAssuredPractice.DesrilaizeTestTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

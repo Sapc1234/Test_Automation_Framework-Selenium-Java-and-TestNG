@@ -20,8 +20,7 @@ public class Basics
 	public static void main(String[] args) throws IOException
 
 	{
-		
-		
+
 		// validate if Add Place API is workimg as expected
 		// Add place-> Update Place with New Address -> Get Place to validate if New
 		// address is present in response
@@ -29,9 +28,7 @@ public class Basics
 		// given - all input details
 		// when - Submit the API -resource,http method
 		// Then - validate the response
-		
-		// content of the file to string ->content of the file can convert into byte
-		// ->Byte data to string
+
 		RestAssured.baseURI = "https://rahulshettyacademy.com";
 
 		String response = given().log().all().queryParam("key", "qaclick123").header("Content-Type", "application/json")
@@ -76,6 +73,8 @@ public class Basics
 	public static String generateStringFromResource(String path) throws IOException
 
 	{
+		// content of the file to string ->content of the file can convert into byte
+		// ->Byte data to string
 		String ab = new String(Files.readAllBytes(Paths.get(path)));
 		return ab;
 	}
