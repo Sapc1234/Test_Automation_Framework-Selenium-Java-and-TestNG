@@ -451,4 +451,74 @@ public class Programs
 		}
 	}
 
+	@Test(priority = 17)
+
+	public void patternStar1()
+
+	{
+		int n = 5;
+
+		for (int i = 1; i <= n; i++)
+
+		{
+			for (int j = 1; j <= i; j++)
+
+			{
+				System.out.print("*");
+			}
+
+			System.out.println(" ");
+		}
+	}
+	
+	@Test(priority = 18)
+
+	public void patternStar2()
+
+	{
+		int n = 5;
+
+		for (int i = 5; i >= 1; i--)
+
+		{
+			for (int j = 1; j <= i; j++)
+
+			{
+				System.out.print("*");
+			}
+
+			System.out.println(" ");
+		}
+	}
+	
+	@Test(priority = 19)
+
+	public void patternStar3()
+
+	{
+		int n = 5;
+
+		for (int i = 1; i <= n; i++)
+
+		{
+			for (int j = 1; j <= n; j++)
+
+			{
+				if(i==1||i==n||j==1||j==n)
+					
+				{
+					System.out.print("*");
+				}
+				
+				else 
+					
+				{
+					System.out.print(" ");
+				}
+				
+			}
+
+			System.out.println(" ");
+		}
+	}
 }

@@ -16,6 +16,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import rest_Map_Pojo.Add_Place;
+import rest_Map_Pojo.GetPlace;
 import rest_Map_Pojo.Location;
 
 public class SpecBuilderTest
@@ -57,8 +58,15 @@ public class SpecBuilderTest
 		Response response = ress.when().post("/maps/api/place/add/json").then().spec(resSpec)
 				.body("scope", equalTo("APP")).header("server", "Apache/2.4.52 (Ubuntu)").extract().response();
 
-		String resString = response.asString();
-		System.out.println(resString);
+		GetPlace gp = response.as(GetPlace.class);
+		String plcaeId = gp.getPlace_id();
+		System.out.println(gp.getPlace_id());
+
+		String apc = given().log().all().queryParam("key", "qaclick123").queryParam("place_id", plcaeId).when().log()
+				.all().get("maps/api/place/get/json").then().log().all().statusCode(200).extract().response()
+				.asString();
+
+		System.out.println(apc);
 
 	}
 }

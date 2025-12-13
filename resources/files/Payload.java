@@ -46,25 +46,17 @@ public class Payload
 
 		return db;
 	}
-	
+
 	public static String createJiraBug()
-	
+
 	{
-		String cjb = "{\r\n"
-				+ "    \"fields\": {\r\n"
-				+ "       \"project\":\r\n"
-				+ "       {\r\n"
-				+ "          \"key\": \"SCRUM\"\r\n"
-				+ "       },\r\n"
-				+ "       \"summary\": \"Media Items are not working\",\r\n"
-				+ "       \"issuetype\":\r\n"
-				+ "        {\r\n"
-				+ "          \"name\": \"Bug\"\r\n"
-				+ "        }\r\n"
-				+ "   }\r\n"
-				+ "}";
-		
-		return cjb;
+		String cb = "{\r\n" + "    \"fields\": {\r\n" + "       \"project\":\r\n" + "       {\r\n"
+				+ "          \"key\": \"SAP\"\r\n" + "       },\r\n"
+				+ "       \"summary\": \"All websites links are not working\",\r\n" + "       \"issuetype\":\r\n"
+				+ "        {\r\n" + "          \"name\": \"Bug\"\r\n" + "        }\r\n" + "   }\r\n" + "}\r\n" + "\r\n"
+				+ "";
+
+		return cb;
 	}
 
 }
