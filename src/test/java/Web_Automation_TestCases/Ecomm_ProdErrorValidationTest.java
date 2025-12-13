@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import utils.ObjectClass;
+import utils.Rerun;
 
 import utils.AppConstants.status;
 
@@ -23,7 +24,7 @@ public class Ecomm_ProdErrorValidationTest
 
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, retryAnalyzer = Rerun.class)
 	public void verifySubmitOrderTest() throws InterruptedException
 
 	{

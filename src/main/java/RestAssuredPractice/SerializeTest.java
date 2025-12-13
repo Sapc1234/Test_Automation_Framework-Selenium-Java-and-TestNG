@@ -10,7 +10,9 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+
 import rest_Map_Pojo.Add_Place;
+import rest_Map_Pojo.GetPlace;
 import rest_Map_Pojo.Location;
 
 public class SerializeTest
@@ -46,11 +48,20 @@ public class SerializeTest
 				.all().assertThat().statusCode(200).body("scope", equalTo("APP"))
 				.header("server", "Apache/2.4.52 (Ubuntu)").extract().response();
 
-		String resString = response.asString();
+		GetPlace gp = response.as(GetPlace.class);
+		String plcaeId = gp.getPlace_id();
+		System.out.println(gp.getPlace_id());
 
-		System.out.println(resString);
-		
-		
+		/*
+		 * JsonPath js = ReuseableMethods.rawToJson(resString); String plcaeId =
+		 * js.getString("place_id");
+		 */
+
+		String apc = given().log().all().queryParam("key", "qaclick123").queryParam("place_id", plcaeId).when().log()
+				.all().get("maps/api/place/get/json").then().log().all().statusCode(200).extract().response()
+				.asString();
+
+		System.out.println(apc);
 
 	}
 }

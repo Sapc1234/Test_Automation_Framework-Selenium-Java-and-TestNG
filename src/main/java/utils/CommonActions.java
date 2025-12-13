@@ -1072,5 +1072,37 @@ public class CommonActions
 		Actions act = new Actions(WebDriverFactory.getInstance().getDriver());
 		act.sendKeys(element, inputText).build().perform();
 	}
+	
+	public void selectValueFromDropDown()
+
+	{
+		Actions act = new Actions(WebDriverFactory.getInstance().getDriver());
+		act.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER).build().perform();
+	}
+	
+	public void clearInputFields()
+
+	{
+		Actions act = new Actions(WebDriverFactory.getInstance().getDriver());
+		act.sendKeys(Keys.BACK_SPACE).build().perform();
+	}
+	
+	public void enterBulk()
+	
+	{
+		
+	}
+	
+	
+
+	public void clickMultipleTimes(String elementId, int times)
+
+	{
+		for (int i = 0; i < times; i++)
+
+		{
+			WebDriverFactory.getInstance().getDriver().findElement(By.id(elementId)).click();
+		}
+	}
 
 }

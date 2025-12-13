@@ -111,7 +111,7 @@ public class EcomApiTest
 		 * System.out.println(jp1.getString("data.country"));
 		 */
 
-		ViewOrdersMainPage odp = vod.when().get("/api/ecom/order/get-orders-details/").then().log().all().extract()
+		ViewOrdersMainPage odp = vod.when().get("/api/ecom/order/get-orders-details").then().log().all().extract()
 				.response().as(ViewOrdersMainPage.class);
 
 		System.out.println(odp.getMessage());
