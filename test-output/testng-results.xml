@@ -1,25 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="25" passed="24" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-12T22:22:25 IST" name="Default suite" finished-at="2025-12-12T22:22:47 IST" duration-ms="21882">
+  <suite started-at="2026-02-09T13:24:10 IST" name="Default suite" finished-at="2026-02-09T13:24:10 IST" duration-ms="193">
     <groups>
     </groups>
-    <test started-at="2025-12-12T22:22:25 IST" name="Default test" finished-at="2025-12-12T22:22:47 IST" duration-ms="21882">
-      <class name="Web_Automation_TestCases.Ecomm_ProdErrorValidationTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Web_Automation_TestCases.Ecomm_ProdErrorValidationTest@58ea606c]" started-at="2025-12-12T22:22:25 IST" name="setup" finished-at="2025-12-12T22:22:35 IST" duration-ms="10665" status="PASS">
+    <test started-at="2026-02-09T13:24:10 IST" name="Default test" finished-at="2026-02-09T13:24:10 IST" duration-ms="193">
+      <class name="Programs">
+        <test-method signature="factorialProgram()[pri:1, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="factorialProgram" finished-at="2026-02-09T13:24:10 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifySubmitOrderTest()[pri:1, instance:Web_Automation_TestCases.Ecomm_ProdErrorValidationTest@58ea606c]" started-at="2025-12-12T22:22:35 IST" name="verifySubmitOrderTest" finished-at="2025-12-12T22:22:41 IST" duration-ms="5716" status="PASS">
+        </test-method> <!-- factorialProgram -->
+        <test-method signature="compressedString1()[pri:3, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="compressedString1" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySubmitOrderTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Web_Automation_TestCases.Ecomm_ProdErrorValidationTest@58ea606c]" started-at="2025-12-12T22:22:41 IST" name="tearDown" finished-at="2025-12-12T22:22:47 IST" duration-ms="5448" status="PASS">
+        </test-method> <!-- compressedString1 -->
+        <test-method signature="fibonanciSeries()[pri:4, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="fibonanciSeries" finished-at="2026-02-09T13:24:10 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Web_Automation_TestCases.Ecomm_ProdErrorValidationTest -->
+        </test-method> <!-- fibonanciSeries -->
+        <test-method signature="vowelsAndConsonants()[pri:5, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="vowelsAndConsonants" finished-at="2026-02-09T13:24:10 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vowelsAndConsonants -->
+        <test-method signature="uniqueNumber()[pri:6, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="uniqueNumber" finished-at="2026-02-09T13:24:10 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uniqueNumber -->
+        <test-method signature="palindromeString()[pri:7, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="palindromeString" finished-at="2026-02-09T13:24:10 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- palindromeString -->
+        <test-method signature="min_Number()[pri:8, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="min_Number" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- min_Number -->
+        <test-method signature="max_Number()[pri:9, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="max_Number" finished-at="2026-02-09T13:24:10 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- max_Number -->
+        <test-method signature="largest_Number()[pri:10, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="largest_Number" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- largest_Number -->
+        <test-method signature="smallest_Number()[pri:11, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="smallest_Number" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smallest_Number -->
+        <test-method signature="pyramid_Triangle_Example1()[pri:12, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="pyramid_Triangle_Example1" finished-at="2026-02-09T13:24:10 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pyramid_Triangle_Example1 -->
+        <test-method signature="pyramid_Triangle_Example2()[pri:13, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="pyramid_Triangle_Example2" finished-at="2026-02-09T13:24:10 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pyramid_Triangle_Example2 -->
+        <test-method signature="RemoveDuplicates()[pri:14, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="RemoveDuplicates" finished-at="2026-02-09T13:24:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveDuplicates -->
+        <test-method signature="secondLargestElementArray()[pri:15, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="secondLargestElementArray" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondLargestElementArray -->
+        <test-method signature="convertUppertoLowerCaseLetter()[pri:16, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="convertUppertoLowerCaseLetter" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertUppertoLowerCaseLetter -->
+        <test-method signature="palindromeNumber()[pri:17, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="palindromeNumber" finished-at="2026-02-09T13:24:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- palindromeNumber -->
+        <test-method signature="patternStar1()[pri:18, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="patternStar1" finished-at="2026-02-09T13:24:10 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patternStar1 -->
+        <test-method signature="patternStar2()[pri:19, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="patternStar2" finished-at="2026-02-09T13:24:10 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patternStar2 -->
+        <test-method signature="patternStar3()[pri:20, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="patternStar3" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patternStar3 -->
+        <test-method signature="uniqueElementsCounter()[pri:21, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="uniqueElementsCounter" finished-at="2026-02-09T13:24:10 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uniqueElementsCounter -->
+        <test-method signature="PrimeNumbers()[pri:22, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="PrimeNumbers" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrimeNumbers -->
+        <test-method signature="Reverse12()[pri:23, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="Reverse12" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reverse12 -->
+        <test-method signature="Reversed21()[pri:24, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="Reversed21" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Reversed21 -->
+        <test-method signature="splitTwoStrings()[pri:25, instance:Programs@609cd4d8]" started-at="2026-02-09T13:24:10 IST" name="splitTwoStrings" finished-at="2026-02-09T13:24:10 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- splitTwoStrings -->
+      </class> <!-- Programs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

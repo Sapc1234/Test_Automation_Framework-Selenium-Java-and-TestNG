@@ -1,7 +1,12 @@
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.testng.annotations.Test;
@@ -80,6 +85,7 @@ public class Programs
 	public void compressedString1()
 
 	{
+		System.out.println("compressedString1compressedString1");
 		String str = "aabbbca";
 		String result = "";
 		int count = 1;
@@ -117,13 +123,15 @@ public class Programs
 	public void fibonanciSeries()
 
 	{
-		int n = 10, n1 = 0, n2 = 1;
+		int n = 10;
+		int n1 = 0;// first Fibonacci number
+		int n2 = 1;// second Fibonacci number.
 
 		for (int i = 1; i <= n; i++)
 
 		{
 			System.out.print(n1 + "  ");// prints the current value of n1
-			int n3 = n1 + n2;
+			int n3 = n1 + n2;// sum of the previous two numbers.
 			n1 = n2;// Updates the n1 and n2
 			n2 = n3;
 
@@ -136,19 +144,19 @@ public class Programs
 	public void vowelsAndConsonants()
 
 	{
-		String str = " We are learning java";
+		String str = "We are learning java";
 		int count = 0;
 		int vCount = 0;
 		int cCount = 0;
 
-		str = str.toLowerCase();
+		str = str.toLowerCase();// convert entire string to lowercase
 
 		for (int i = 0; i < str.length(); i++)
 
 		{
 
 			if (str.charAt(i) != ' ')
-				count++;
+				count++;// count all characters except spaces
 
 			if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o'
 					|| str.charAt(i) == 'u')
@@ -159,6 +167,8 @@ public class Programs
 
 			else if (str.charAt(i) > 'a' && str.charAt(i) < 'z')
 
+			// If the character is between a and z (alphabetic) but not a vowel → increment
+			// cCount.
 			{
 				cCount++;
 			}
@@ -171,21 +181,34 @@ public class Programs
 
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 6)
 
 	public void uniqueNumber()
 
 	{
+
 		List<Integer> val = Arrays.asList(1, 2, 2, 5, 8, 2, 9, 28, 53, 7, 9, 8, 4);
 		val.stream().distinct().sorted().forEach(s -> System.out.print(s));
 
 		List<Integer> li = val.stream().distinct().sorted().collect(Collectors.toList());
-
 		System.out.println(li.get(4));
+
+		int[] ab = { 2, 4, 7, 8, 9, 7, 9, 10, 2, 7 };
+
+		// Using Java 8 Streams to get unique numbers
+		List<Integer> uniqueNumbers = Arrays.stream(ab) // IntStream
+				.distinct() // remove duplicates
+				.boxed() // convert int → Integer
+				.collect(Collectors.toList());
+		Collections.reverse(uniqueNumbers);
+
+		System.out.println(uniqueNumbers);
+
+		System.out.println(uniqueNumbers);
 
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 7)
 
 	public void palindromeString()
 
@@ -211,7 +234,7 @@ public class Programs
 		}
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 8)
 
 	public void min_Number()
 
@@ -233,7 +256,7 @@ public class Programs
 		System.out.println("The minimun number of above matrix: " + min);
 	}
 
-	@Test(priority = 8)
+	@Test(priority = 9)
 
 	public void max_Number()
 
@@ -261,7 +284,7 @@ public class Programs
 
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 10)
 
 	public void largest_Number()
 
@@ -282,7 +305,7 @@ public class Programs
 		System.out.println("The largest number is : " + largest);
 	}
 
-	@Test(priority = 10)
+	@Test(priority = 11)
 
 	public void smallest_Number()
 
@@ -298,12 +321,11 @@ public class Programs
 
 				smallest = a[i];
 		}
-
+		
 		System.out.println("The smallest number is : " + smallest);
-
 	}
 
-	@Test(priority = 11)
+	@Test(priority = 12)
 
 	public void pyramid_Triangle_Example1()
 
@@ -324,7 +346,7 @@ public class Programs
 
 	}
 
-	@Test(priority = 12)
+	@Test(priority = 13)
 
 	public void pyramid_Triangle_Example2()
 
@@ -344,7 +366,7 @@ public class Programs
 		}
 	}
 
-	@Test(priority = 13)
+	@Test(priority = 14)
 
 	public void RemoveDuplicates()
 
@@ -363,7 +385,7 @@ public class Programs
 		System.out.println(hs);
 	}
 
-	@Test(priority = 14)
+	@Test(priority = 15)
 
 	public void secondLargestElementArray()
 
@@ -393,7 +415,7 @@ public class Programs
 		System.out.println("The Second largest elemnt is : " + second);
 	}
 
-	@Test(priority = 15)
+	@Test(priority = 16)
 
 	public void convertUppertoLowerCaseLetter()
 
@@ -420,13 +442,13 @@ public class Programs
 		System.out.println(str);
 	}
 
-	@Test(priority = 16)
+	@Test(priority = 17)
 
 	public void palindromeNumber()
 
 	{
 
-		int num = 454;
+		int num = 4525;
 		int rev = 0;
 		int temp = num;
 
@@ -437,6 +459,8 @@ public class Programs
 			rev = rev * 10 + num % 10;
 			num = num / 10;
 		}
+		
+		System.out.println(rev);
 
 		if (temp == rev)
 
@@ -451,7 +475,7 @@ public class Programs
 		}
 	}
 
-	@Test(priority = 17)
+	@Test(priority = 18)
 
 	public void patternStar1()
 
@@ -470,8 +494,8 @@ public class Programs
 			System.out.println(" ");
 		}
 	}
-	
-	@Test(priority = 18)
+
+	@Test(priority = 19)
 
 	public void patternStar2()
 
@@ -490,8 +514,8 @@ public class Programs
 			System.out.println(" ");
 		}
 	}
-	
-	@Test(priority = 19)
+
+	@Test(priority = 20)
 
 	public void patternStar3()
 
@@ -504,21 +528,170 @@ public class Programs
 			for (int j = 1; j <= n; j++)
 
 			{
-				if(i==1||i==n||j==1||j==n)
-					
+				if (i == 1 || i == n || j == 1 || j == n)
+
 				{
 					System.out.print("*");
 				}
-				
-				else 
-					
+
+				else
+
 				{
 					System.out.print(" ");
 				}
-				
+
 			}
 
 			System.out.println(" ");
 		}
 	}
+
+	@Test(priority = 21)
+
+	public void uniqueElementsCounter()
+
+	{
+		// Initialize the list with given elements
+		List<Integer> l1 = Arrays.asList(1, 1, 2, 5, 2, 9, 8, 2, 4, 7, 5);
+
+		// Get the unique elements using stream and distinct()
+		l1.stream().distinct().sorted().collect(Collectors.toList()).forEach(s -> System.out.println(s));
+
+		// Count occurrences of each elements using stream and groupingBy
+
+		// Groups elements of the stream by themselves (i.e., each unique integer
+		// becomes a key) and
+		// For each group, it counts how many times that element appears in the list.
+
+		Map<Integer, Long> dic1 = l1.stream().collect(Collectors.groupingBy(i -> i, Collectors.counting()));
+		System.out.println(dic1);
+
+		System.out.println("Using Normal Java");
+
+		// Initialize an empty list and map to hold unique elements and count
+
+		List<Integer> uni = new ArrayList<Integer>();
+		Map<Integer, Integer> dic = new HashMap<Integer, Integer>();
+
+		for (int i : l1)
+
+		{
+			if (!uni.contains(i))
+
+			// if the element is not already in the uni ,add it and initialize the count in
+			// dic
+
+			{
+				uni.add(i);
+				dic.put(i, 1);
+			}
+
+			else
+
+			{
+				// if the elements is already in uni ,increments the count in dic
+				dic.put(i, dic.get(i) + 1);
+			}
+		}
+
+		System.out.println(uni);
+		System.out.println(dic);
+
+	}
+	
+	@Test(priority = 22)
+
+	public void PrimeNumbers()
+
+	{
+		int n=50;
+		
+		for(int i=2;i<=n;i++)
+			
+		{
+			boolean isPrime = true;
+			
+			for(int j=2;j<=i/2;j++)
+				
+			{
+				if(i%j==0)
+					
+				{
+					isPrime = false;
+				}
+			}
+			
+			if(isPrime)
+				
+			{
+				System.out.println(i);
+			}
+		}
+	}
+	
+	@Test(priority = 23)
+	
+	public void Reverse12()
+	
+	{
+		
+		String str = "I LOVE YOU";
+		
+		String[] words = str.split(" ");//split the string by spaces into an array
+		
+		StringBuilder reversed = new StringBuilder();//Use a string builder to efficiently build the result
+		
+		for(int i = words.length-1;i>=0;i--)//loop through the array from the end to beginning
+			
+		{
+			reversed.append(words[i]);
+			
+			if(i>0)
+				
+			{
+				reversed.append(" ");//add the space between words,but not after the last one
+			}
+		}
+		
+		System.out.println(reversed.toString());
+		
+		//-----------------------------------------
+		
+		//Remove the space from the string
+		
+		
+		
+	}
+	
+	
+	@Test(priority = 24)
+	
+	public void Reversed21()
+	
+	{
+		String str = "I LOVE YOU";
+		String withoutSapce =  str.replace(" ", "");
+		String reversed  = new StringBuilder(withoutSapce).reverse().toString();
+		System.out.println(reversed);
+	}
+	
+	@Test(priority = 25)
+	
+	public void splitTwoStrings()
+	
+	{
+		String str = "abc-2019,xyz";
+		
+		String[] formatedString =  str.split("[-|,]");
+		
+		for(int i=0;i<formatedString.length;i++)
+			
+		{
+			System.out.println(formatedString[i]);
+		}
+	}
+	
+	
+	
+
 }

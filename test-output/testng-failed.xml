@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Backend_Automation_TestCases.Rest_Ecom_Api_Test">
+      <class name="Programs">
         <methods>
-          <include name="ecomerceApiAutomation"/>
+          <include name="Reverse12"/>
         </methods>
-      </class> <!-- Backend_Automation_TestCases.Rest_Ecom_Api_Test -->
+      </class> <!-- Programs -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -7,7 +7,7 @@
 
 		<classes>
 
-			<class name="Web_Automation_TestCases.Ecomm_SubmittOrderTest" />
+			<class name="com.Web_Automation_TestCases.Ecomm_SubmittOrderTest" />
 
 		</classes>
 	</test>
