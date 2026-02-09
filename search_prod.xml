@@ -7,7 +7,7 @@
 
 		<classes>
 
-			<class name="Web_Automation_TestCases.RSA_Search_Product" />
+			<class name="com.Web_Automation_TestCases.RSA_Search_Product" />
 
 		</classes>
 	</test>
