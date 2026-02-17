@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Programs">
+      <class name="com.Web_Automation_TestCases.Ecomm_SubmittOrderTest">
         <methods>
-          <include name="Reverse12"/>
+          <include name="tearDown"/>
+          <include name="verifySubmitOrderTest"/>
+          <include name="setup"/>
+          <include name="verifyOrderHistoryTest"/>
         </methods>
-      </class> <!-- Programs -->
+      </class> <!-- com.Web_Automation_TestCases.Ecomm_SubmittOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

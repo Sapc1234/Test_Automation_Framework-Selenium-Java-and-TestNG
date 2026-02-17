@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [E-commerce Department]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="SubmittOrderTest(failed)">
+    <classes>
+      <class name="com.Web_Automation_TestCases.Ecomm_SubmittOrderTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifySubmitOrderTest"/>
+          <include name="setup"/>
+          <include name="verifyOrderHistoryTest"/>
+        </methods>
+      </class> <!-- com.Web_Automation_TestCases.Ecomm_SubmittOrderTest -->
+    </classes>
+  </test> <!-- SubmittOrderTest(failed) -->
+</suite> <!-- Failed suite [E-commerce Department] -->

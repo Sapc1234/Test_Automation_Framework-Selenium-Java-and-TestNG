@@ -51,14 +51,13 @@ public class WebDriverFactory
 				WebDriverManager.chromedriver().setup();
 
 				// Set the path to ChromeDriver (replace with your actual path)
-				// System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+
-				// "\\src\\main\\resources\\chromedriver.exe");
+				//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
 
 				ChromeOptions chromeOptions = new ChromeOptions();
 				chromeOptions.setCapability(CapabilityType.UNHANDLED_PROMPT_BEHAVIOUR, UnexpectedAlertBehaviour.IGNORE);
 				chromeOptions.setAcceptInsecureCerts(true);
 
-				if (ObjectClass.getCommonActions().properties.getProperty("--headless=new").equalsIgnoreCase("yes"))
+				if (ObjectClass.getCommonActions().properties.getProperty("headless").equalsIgnoreCase("yes"))
 
 					return new ChromeDriver(chromeOptions);
 
@@ -67,11 +66,15 @@ public class WebDriverFactory
 					return new ChromeDriver(chromeOptions);
 
 			case "firefox":
+				
 				WebDriverManager.firefoxdriver().setup();
 				return new FirefoxDriver();
+				
 			case "edge":
+				
 				WebDriverManager.edgedriver().setup();
 				return new EdgeDriver();
+				
 			default:
 				return null;
 			}
